@@ -9,9 +9,7 @@ git commit --allow-empty-message --allow-empty -m "$commit_message"
 git checkout -b ExPeRiMeNtAl_Merge_"$commit_message"_"$(date "$date")"
 #Go to stable
 git checkout stable
-git add -A
 git commit --allow-empty-message -m "$commit_message"
-git merge --squash master
-git add -A
+git merge --no-commit --squash master
 git commit --allow-empty-message --allow-empty -m "$commit_message"
 git checkout master
