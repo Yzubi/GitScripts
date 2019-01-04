@@ -6,7 +6,7 @@ commit_message="$@"
 git add -A
 git commit --allow-empty-message --allow-empty -m "$commit_message"
 # Create a new ExPeRiMeNtAl branch
-git checkout -b ExPeRiMeNtAl_Merge"$commit_message"_"$(date "$date")"
+git checkout -b ExPeRiMeNtAl_Merge_"$commit_message"_"$(date "$date")"
 #Go to stable
 git checkout stable
 git add -A
